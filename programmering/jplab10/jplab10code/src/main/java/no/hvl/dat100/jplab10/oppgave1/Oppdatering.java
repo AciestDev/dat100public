@@ -2,31 +2,32 @@ package no.hvl.dat100.jplab10.oppgave1;
 
 public class Oppdatering {
 
-	public static void main(String[] args) {
-		
-		int[] tab = {1,2,3,4,5,6};
-		
-		// skriv ut
-				System.out.print("[ ");
-				
-				for (int x : tab) {
-					System.out.print(x + " ");
-				}
-				
-				System.out.println("]");
-				
-		// oppdater
-		for (int x : tab) {
-			x = x + 1;
-		}
+    public static void main(String[] args) {
 
-		// skriv ut
-		System.out.print("[ ");
-		
-		for (int x : tab) {
-			System.out.print(x + " ");
-		}
-		
-		System.out.println("]");
-	}
+        int[] tab = {1,2,3,4,5,6};
+
+        // skriv ut
+        System.out.print("[ ");
+
+        for (int x : tab) {
+            System.out.print(x + " ");
+        }
+
+        System.out.println("]");
+
+        // oppdater
+        for (int x = 0; x < tab.length; x++) {
+            tab[x] ++;
+        }
+
+        // skriv ut
+        System.out.print("[ ");
+
+        for (int x : tab) {
+            System.out.print(x + " ");
+        }
+
+        System.out.println("]");
+    }
+
 }
